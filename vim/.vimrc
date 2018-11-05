@@ -58,6 +58,7 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_goto_buffer_command = 'split-or-existing-window'
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 
@@ -66,5 +67,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeQuitOnOpen = 1
 
 nmap <Leader>t :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
 
 nmap <Leader>s <ESC>:call SwitchExt()<CR>
