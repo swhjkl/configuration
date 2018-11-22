@@ -3,7 +3,6 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
@@ -85,3 +84,5 @@ let g:airline#extensions#tabline#enabled = 1
 
 nmap <C-j> :bn<CR>
 nmap <C-k> :bp<CR>
+
+nmap <Leader>s <ESC>:call SwitchExt()<CR>
