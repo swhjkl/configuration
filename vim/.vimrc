@@ -81,8 +81,9 @@ nmap <Leader>s <ESC>:call SwitchExt()<CR>
 
 let g:airline#extensions#whitespace#checks = []
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
-nmap <C-j> :bn<CR>
-nmap <C-k> :bp<CR>
+nmap <C-l> :bn<CR>
+nmap <C-h> :bp<CR>
 
 nmap <Leader>s <ESC>:call SwitchExt()<CR>
